@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>María Helena Salas | Desarrolladora Full Stack</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo-container">
+        <div class="logo">
+          <span>MH</span>
+        </div>
+        <a href="#" class="name">María Helena Salas</a>
+      </div>
+
+      <div class="nav-right">
+        <nav class="desktop-nav">
+          <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+          <a href="#habilidades" class="nav-link">Habilidades</a>
+          <a href="#proyectos" class="nav-link">Proyectos</a>
+          <a href="#experiencia" class="nav-link">Experiencia</a>
+          <a href="#contacto" class="nav-link">Contacto</a>
+        </nav>
+        <div class="theme-toggle" id="theme-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2" />
+            <path d="M12 20v2" />
+            <path d="m4.93 4.93 1.41 1.41" />
+            <path d="m17.66 17.66 1.41 1.41" />
+            <path d="M2 12h2" />
+            <path d="M20 12h2" />
+            <path d="m6.34 17.66-1.41 1.41" />
+            <path d="m19.07 4.93-1.41 1.41" />
+          </svg>
+        </div>
+        <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-content">
+      <button class="close-menu" id="close-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#habilidades" class="nav-link">Habilidades</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#experiencia" class="nav-link">Experiencia</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <canvas id="particles-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-logo-container animate__animated animate__fadeInDown">
+        <div class="hero-logo">
+          <span>MH</span>
+        </div>
+        <h1 class="hero-title animate__animated animate__fadeIn animate__delay-1s">María Helena Salas</h1>
+      </div>
+      <div class="hero-text animate__animated animate__fadeIn animate__delay-1s">
+        <div class="typing-container">Desarrolladora Full Stack</div>
+        <p class="hero-subtitle">Creando soluciones digitales con pasión y profesionalismo</p>
+      </div>
+      <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-2s">
+        <a href="#contacto" class="btn btn-primary">Contáctame</a>
+        <a href="#sobre-mi" class="btn btn-outline">Conoce más</a>
+      </div>
+      <div class="scroll-indicator animate__animated animate__fadeIn animate__delay-3s">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="sobre-mi" class="about section-with-indicator">
+    <div class="section-indicator">
+      <span>Sobre mí</span>
+    </div>
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeIn" data-animate="true">Sobre mí</h2>
+      <div class="about-content">
+        <div class="about-image animate__animated" data-animate="true" data-animation="animate__fadeInLeft">
+          <div class="profile-image">
+            <!-- Aquí puedes reemplazar la URL con la ruta a tu imagen -->
+            <img src="imagen perfil mayito 2.JPG" alt="María Helena Salas">
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="card animate__animated" data-animate="true" data-animation="animate__fadeInRight">
+            <p>Soy María Helena Salas, desarrolladora junior Full Stack con experiencia en Java, Spring Boot, PostgreSQL, JavaScript, HTML y CSS. Actualmente, me encuentro en formación en Campuslands, donde fortalezco mis habilidades técnicas y trabajo en proyectos prácticos que me permiten aplicar mis conocimientos en entornos reales.</p>
+          </div>
+          <div class="about-cards">
+            <div class="card card-accent animate__animated" data-animate="true" data-animation="animate__fadeInUp">
+              <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                  <path d="M4 22h16"></path>
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                </svg>
+                <h3>Lo que me motiva</h3>
+              </div>
+              <p>Disfruto enfrentar nuevos desafíos, aprender tecnologías emergentes y mejorar continuamente mis habilidades. Me gusta trabajar en equipo, compartir conocimientos y aportar soluciones efectivas a los proyectos en los que participo.</p>
+            </div>
+            <div class="card card-accent animate__animated" data-animate="true" data-animation="animate__fadeInUp" data-delay="0.3s">
+              <div class="card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <h3>Mi enfoque</h3>
+              </div>
+              <p>Me esfuerzo por escribir código limpio, bien estructurado y escalable, asegurándome de que mis aplicaciones sean intuitivas, eficientes y seguras.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="habilidades" class="skills section-with-indicator">
+    <div class="section-indicator">
+      <span>Habilidades</span>
+    </div>
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeIn" data-animate="true">Habilidades técnicas</h2>
+      <div class="skills-content">
+        <div class="skills-column animate__animated" data-animate="true" data-animation="animate__fadeInLeft">
+          <div class="skills-category">
+            <h3 class="category-title">Frontend</h3>
+            <div class="skills-list">
+              <div class="skill-card" data-animate="true">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                </div>
+                <div class="skill-info">
+                  <h4>HTML</h4>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                  <div class="skill-labels">
+                    <span>Principiante</span>
+                    <span>Avanzado</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-card" data-animate="true">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                </div>
+                <div class="skill-info">
+                  <h4>CSS</h4>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                  <div class="skill-labels">
+                    <span>Principiante</span>
+                    <span>Avanzado</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-card" data-animate="true">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                </div>
+                <div class="skill-info">
+                  <h4>JavaScript</h4>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                  <div class="skill-labels">
+                    <span>Principiante</span>
+                    <span>Avanzado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3 class="category-title">Backend</h3>
+            <div class="skills-list">
+              <div class="skill-card" data-animate="true">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                </div>
+                <div class="skill-info">
+                  <h4>Java</h4>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                  <div class="skill-labels">
+                    <span>Principiante</span>
+                    <span>Avanzado</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-card" data-animate="true">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
+                </div>
+                <div class="skill-info">
+                  <h4>Spring Boot</h4>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                  <div class="skill-labels">
+                    <span>Principiante</span>
+                    <span>Avanzado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-column animate__animated" data-animate="true" data-animation="animate__fadeInRight">
+          <div class="skills-category">
+            <h3 class="category-title">Bases de Datos</h3>
+            <div class="skills-list">
+              <div class="skill-card" data-animate="true">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                </div>
+                <div class="skill-info">
+                  <h4>PostgreSQL</h4>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                  <div class="skill-labels">
+                    <span>Principiante</span>
+                    <span>Avanzado</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-card" data-animate="true">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                </div>
+                <div class="skill-info">
+                  <h4>MySQL</h4>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                  <div class="skill-labels">
+                    <span>Principiante</span>
+                    <span>Avanzado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3 class="category-title">Herramientas</h3>
+            <div class="skills-list">
+              <div class="skill-card" data-animate="true">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                </div>
+                <div class="skill-info">
+                  <h4>Git</h4>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                  <div class="skill-labels">
+                    <span>Principiante</span>
+                    <span>Avanzado</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-card" data-animate="true">
+                <div class="skill-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                </div>
+                <div class="skill-info">
+                  <h4>GitHub</h4>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                  <div class="skill-labels">
+                    <span>Principiante</span>
+                    <span>Avanzado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="proyectos" class="projects section-with-indicator">
+    <div class="section-indicator">
+      <span>Proyectos</span>
+    </div>
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeIn" data-animate="true">Proyectos</h2>
+      <div class="projects-grid">
+        <div class="project-card animate__animated" data-animate="true" data-animation="animate__fadeInUp">
+          <div class="project-image">
+            <img src="WhatsApp Image 2025-03-07 at 12.27.23 AM.jpeg" alt="E-commerce Platform">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">E-commerce Platform</h3>
+            <p class="project-description">Proyecto grupal sobre el desarrollo de una interfaz interactiva para mostrar información sobre los cohetes de SpaceX, utilizando su API para obtener datos en tiempo real. Empleamos HTML, Javascript, CSS3,  creando una experiencia visual y dinámica.  </p>
+            <a href="https://github.com/mariaHelenaSalas" class="btn btn-primary" target="_blank">Ver proyecto</a>
+          </div>
+        </div>
+        <div class="project-card animate__animated" data-animate="true" data-animation="animate__fadeInUp" data-delay="0.2s">
+          <div class="project-image">
+            <img src="imagen ropa.jpeg" alt="Task Management App">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Task Management App</h3>
+            <p class="project-description">CampusShop es una tienda online diseñada con HTML y CSS que permite darle un estilo llamativo y lograr cautivar la atencion de los usuarios y sumegirlos en las tendencias de la moda</p>
+            <a href="https://github.com/mariaHelenaSalas" class="btn btn-primary" target="_blank">Ver proyecto</a>
+          </div>
+        </div>
+        <div class="project-card animate__animated" data-animate="true" data-animation="animate__fadeInUp" data-delay="0.4s">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400" alt="Blog CMS">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Blog CMS</h3>
+            <p class="project-description">Sistema de gestión de contenidos para blogs con editor WYSIWYG y gestión de usuarios.</p>
+            <a href="https://github.com/mariaHelenaSalas" class="btn btn-primary" target="_blank">Ver proyecto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experiencia" class="experience section-with-indicator">
+    <div class="section-indicator">
+      <span>Experiencia</span>
+    </div>
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeIn" data-animate="true">Experiencia</h2>
+      <div class="experience-card animate__animated" data-animate="true" data-animation="animate__fadeInUp">
+        <div class="experience-header">
+          <div class="experience-title">
+            <h3>📍 Desarrolladora Full Stack</h3>
+            <p class="experience-company">Campuslands</p>
+          </div>
+          <p class="experience-date">🗓 Actualidad</p>
+        </div>
+        <div class="experience-content">
+          <ul class="experience-list">
+            <li>Desarrollo de aplicaciones utilizando Java, Spring Boot, JavaScript, HTML, CSS y PostgreSQL.</li>
+            <li>Implementación de CRUD, consumo de APIs y manejo de bases de datos.</li>
+            <li>Trabajo en equipo bajo metodologías ágiles como SCRUM para la gestión de proyectos.</li>
+            <li>Mejora continua en frontend y backend, aplicando buenas prácticas de código.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contacto" class="contact section-with-indicator">
+    <div class="section-indicator">
+      <span>Contacto</span>
+    </div>
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeIn" data-animate="true">Contáctame</h2>
+      <div class="contact-content">
+        <div class="contact-info animate__animated" data-animate="true" data-animation="animate__fadeInLeft">
+          <div class="card">
+            <h3>Información de contacto</h3>
+            <p>Puedes contactarme a través de los siguientes medios:</p>
+            <div class="contact-links">
+              <div class="contact-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                <a href="mailto:mariahelenasalas@example.com">mariahelenasalas@example.com</a>
+              </div>
+              <div class="contact-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <a href="https://www.linkedin.com/in/mar%C3%ADa-helena-salas-273a86352/" target="_blank">LinkedIn</a>
+              </div>
+              <div class="contact-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
+                <a href="https://github.com/mariaHelenaSalas" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form animate__animated" data-animate="true" data-animation="animate__fadeInRight">
+          <div class="card">
+            <h3>Envíame un mensaje</h3>
+            <p>Completa el formulario y me pondré en contacto contigo lo antes posible.</p>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo">
+            <span>MH</span>
+          </div>
+          <div>
+            <h3>María Helena Salas</h3>
+            <p>Desarrolladora Full Stack</p>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/mar%C3%ADa-helena-salas-273a86352/" target="_blank" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect width="4" height="12" x="2" y="9"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://github.com/mariaHelenaSalas" target="_blank" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+              <path d="M9 18c-4.51 2-5-2-7-2"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2023 María Helena Salas</p>
+          <p>Todos los derechos reservados</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
