@@ -188,6 +188,41 @@ body {
   color: var(--primary);
 }
 
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.language-btn {
+  padding: 0.25rem 0.5rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--foreground);
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.language-btn.active {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border-color: var(--primary);
+}
+
+.language-btn:hover:not(.active) {
+  background-color: var(--secondary);
+}
+
+.mobile-language-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
 .theme-toggle,
 .mobile-menu-toggle {
   display: flex;
@@ -329,52 +364,8 @@ body {
   z-index: 1;
 }
 
-.hero-logo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.hero-logo {
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(135deg, var(--primary), #2d9cdb);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 2.5rem;
-  font-weight: bold;
-  box-shadow: 0 10px 25px rgba(var(--primary-rgb), 0.4);
-  position: relative;
-  overflow: hidden;
-  animation: float 3s ease-in-out infinite;
-}
-
-.hero-logo::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8) 0%, transparent 70%);
-  opacity: 0.4;
-}
-
-.hero-logo::after {
-  content: "";
-  position: absolute;
-  inset: -10px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary), transparent);
-  opacity: 0.2;
-  z-index: -1;
-  animation: pulse 2s ease-in-out infinite;
-}
-
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   line-height: 1.2;
   background: linear-gradient(to right, var(--primary), #2d9cdb);
@@ -396,6 +387,7 @@ body {
   font-size: 1.5rem;
   overflow: hidden;
   white-space: nowrap;
+  border-right: 4px solid var(--primary);
   animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
 }
 
@@ -978,18 +970,32 @@ section {
   width: 100%;
   padding: 0.75rem;
   border-radius: var(--radius);
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
   background-color: var(--background);
   color: var(--foreground);
   transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Añadir estilos específicos para modo oscuro */
+.dark .form-group input,
+.dark .form-group textarea {
+  border-color: rgba(var(--primary-rgb), 0.4);
+  box-shadow: 0 0 0 1px rgba(var(--primary-rgb), 0.2);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 2px rgba(var(--primary-rgb), 0.2);
+  box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.2);
   transform: translateY(-2px);
+}
+
+/* Mejorar la visibilidad de la tarjeta de contacto en modo oscuro */
+.dark .contact .card {
+  border-color: rgba(var(--primary-rgb), 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */

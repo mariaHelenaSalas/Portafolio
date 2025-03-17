@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>María Helena Salas | Desarrolladora Full Stack</title>
+  <title>María Helena Salas | Desarrolladora Full Stack Junior</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -21,12 +21,13 @@
 
       <div class="nav-right">
         <nav class="desktop-nav">
-          <a href="#sobre-mi" class="nav-link">Sobre mí</a>
-          <a href="#habilidades" class="nav-link">Habilidades</a>
-          <a href="#proyectos" class="nav-link">Proyectos</a>
-          <a href="#experiencia" class="nav-link">Experiencia</a>
-          <a href="#contacto" class="nav-link">Contacto</a>
+          <a href="#sobre-mi" class="nav-link" data-en="About me" data-es="Sobre mí">Sobre mí</a>
+          <a href="#habilidades" class="nav-link" data-en="Skills" data-es="Habilidades">Habilidades</a>
+          <a href="#proyectos" class="nav-link" data-en="Projects" data-es="Proyectos">Proyectos</a>
+          <a href="#experiencia" class="nav-link" data-en="Experience" data-es="Experiencia">Experiencia</a>
+          <a href="#contacto" class="nav-link" data-en="Contact" data-es="Contacto">Contacto</a>
         </nav>
+        
         <div class="theme-toggle" id="theme-toggle">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon">
             <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
@@ -37,7 +38,7 @@
             <path d="M12 20v2" />
             <path d="m4.93 4.93 1.41 1.41" />
             <path d="m17.66 17.66 1.41 1.41" />
-            <path d="M2 12h2" />
+            <path d="M2 12h2" />ñ
             <path d="M20 12h2" />
             <path d="m6.34 17.66-1.41 1.41" />
             <path d="m19.07 4.93-1.41 1.41" />
@@ -54,6 +55,7 @@
     </div>
   </header>
 
+
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobile-menu">
     <div class="mobile-menu-content">
@@ -64,12 +66,16 @@
         </svg>
       </button>
       <nav class="mobile-nav">
-        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
-        <a href="#habilidades" class="nav-link">Habilidades</a>
-        <a href="#proyectos" class="nav-link">Proyectos</a>
-        <a href="#experiencia" class="nav-link">Experiencia</a>
-        <a href="#contacto" class="nav-link">Contacto</a>
+        <a href="#sobre-mi" class="nav-link" data-en="About me" data-es="Sobre mí">Sobre mí</a>
+        <a href="#habilidades" class="nav-link" data-en="Skills" data-es="Habilidades">Habilidades</a>
+        <a href="#proyectos" class="nav-link" data-en="Projects" data-es="Proyectos">Proyectos</a>
+        <a href="#experiencia" class="nav-link" data-en="Experience" data-es="Experiencia">Experiencia</a>
+        <a href="#contacto" class="nav-link" data-en="Contact" data-es="Contacto">Contacto</a>
       </nav>
+      <div class="mobile-language-toggle">
+        <button class="language-btn active" data-lang="es">ES</button>
+        <button class="language-btn" data-lang="en">EN</button>
+      </div>
     </div>
   </div>
 
@@ -77,19 +83,14 @@
   <section id="inicio" class="hero">
     <canvas id="particles-canvas"></canvas>
     <div class="hero-content">
-      <div class="hero-logo-container animate__animated animate__fadeInDown">
-        <div class="hero-logo">
-          <span>MH</span>
-        </div>
-        <h1 class="hero-title animate__animated animate__fadeIn animate__delay-1s">María Helena Salas</h1>
-      </div>
       <div class="hero-text animate__animated animate__fadeIn animate__delay-1s">
-        <div class="typing-container">Desarrolladora Full Stack</div>
-        <p class="hero-subtitle">Estudiante de Programación en Campuslands apasionada por la tecnología y el desarrollo de soluciones innovadoras</p>
+        <h1 class="hero-title animate__animated animate__fadeIn animate__delay-1s">María Helena Salas</h1>
+        <div class="typing-container" data-en="Full Stack Developer" data-es="Desarrolladora Full Stack">Desarrolladora Full Stack Junior</div>
+        <p class="hero-subtitle" data-en="Creating digital solutions with passion and professionalism" data-es="Creando soluciones digitales con pasión y profesionalismo">Creando soluciones digitales con pasión y profesionalismo</p>
       </div>
       <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-2s">
-        <a href="#contacto" class="btn btn-primary">Contáctame</a>
-        <a href="#sobre-mi" class="btn btn-outline">Conoce más</a>
+        <a href="#contacto" class="btn btn-primary" data-en="Contact me" data-es="Contáctame">Contáctame</a>
+        <a href="#sobre-mi" class="btn btn-outline" data-en="Learn more" data-es="Conoce más">Conoce más</a>
       </div>
       <div class="scroll-indicator animate__animated animate__fadeIn animate__delay-3s">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -434,7 +435,7 @@
           </div>
           <div>
             <h3>María Helena Salas</h3>
-            <p>Desarrolladora Full Stack</p>
+            <p>Desarrolladora Full Stack Junior</p>
           </div>
         </div>
         <div class="footer-social">
